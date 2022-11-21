@@ -1,12 +1,12 @@
 def ternary(n):
-    e = n//3
-    q = n%3
+    a = n//3
+    b = n%3
     if n == 0:
         return '0'
-    elif e == 0:
-        return str(q)
+    elif a == 0:
+        return str(b)
     else:
-        return ternary(e) + str(q)
+        return ternary(a) + str(b)
         
 num=int(input("Enter a number: "))
 print(ternary(num))
